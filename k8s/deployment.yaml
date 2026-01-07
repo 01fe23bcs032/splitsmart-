@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: splitsmart
-        image: YOUR_DOCKERHUB_USERNAME/splitsmart:latest
+        image: 01FE23BCS032/splitsmart:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 3000
