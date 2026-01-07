@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: splitsmart
+    env: docker
+    dockerfilePath: ./Dockerfile
+    region: oregon
+    plan: free
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: MONGODB_URI
+        sync: false
+    healthCheckPath: /
