@@ -13,14 +13,6 @@ RUN npm ci --only=production
 # Copy application files
 COPY . .
 
-# Create public directory if it doesn't exist
-RUN mkdir -p public
-
-# Copy frontend files to public
-COPY index.html public/
-COPY style.css public/
-COPY script.js public/
-
 # Expose port
 EXPOSE 3000
 
